@@ -29,23 +29,30 @@ class BookList {
     const bookDiv = document.querySelector('.book-list');
     bookDiv.innerHTML = '';
     if (this.bookArray.length === 0) {
-      bookDiv.insertAdjacentHTML('beforebegin', '<p>You have no awesome books</p>');
-    }
-    this.bookArray.forEach((element, index) => {
-      bookDiv.innerHTML += `
+      bookDiv.insertAdjacentHTML('beforebegin', '<p class="no-book">You have no awesome books</p>');
+      bookDiv.style.border = 'none';
+    } else {
+      const noBook = document.querySelector('.no-book');
+      if (noBook) {
+        noBook.textContent = '';
+      }
+      bookDiv.style.border = '2px solid';
+      this.bookArray.forEach((element, index) => {
+        bookDiv.innerHTML += `
         <div class='book-div'>
           <p>"${element.title}" by ${element.author}</p>
           <button class='remove-btn' data-index='${index}'>Remove</button>
         </div>
         `;
-      const removeBtn = document.querySelectorAll('.remove-btn');
-      removeBtn.forEach((btn) => {
-        btn.addEventListener('click', (event) => {
-          const { index } = event.target.dataset;
-          this.removeBook(index);
+        const removeBtn = document.querySelectorAll('.remove-btn');
+        removeBtn.forEach((btn) => {
+          btn.addEventListener('click', (event) => {
+            const { index } = event.target.dataset;
+            this.removeBook(index);
+          });
         });
       });
-    });
+    }
     bookSection.appendChild(bookDiv);
   }
 }
