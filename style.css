@@ -19,15 +19,11 @@ body {
 }
 
 header {
-    height: 5.15rem;
+  height: 5.15rem;
 }
 
 main {
-    height: calc(100vh - 9.1rem);
-}
-
-footer {
-    height: 2.6rem;
+  height: calc(100vh - 9.1rem);
 }
 
 .form-sec,
@@ -45,7 +41,7 @@ nav > ul {
 }
 
 nav li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 nav {
@@ -76,7 +72,7 @@ section {
 }
 
 .book-list {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .book-div {
@@ -95,72 +91,74 @@ section {
 }
 
 input[type=text] {
-    display: block;
-    margin: 1rem 0rem 1.5rem;
-    padding: 0.3rem;
-    width: 100%;
+  display: block;
+  margin: 1rem 0 1.5rem;
+  padding: 0.3rem;
+  width: 100%;
 }
 
 .add-btn {
-    float: right;
+  float: right;
 }
+
 .add-btn,
 button {
-    font-weight: 700;
-    padding: 0.3rem;
+  font-weight: 700;
+  padding: 0.3rem;
 }
 
 .contact {
-    max-width: 40rem;
+  max-width: 40rem;
 }
 
 .contact > h2 {
-    margin: 1rem 0;
-    text-align: center;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .contact ul {
-    margin: 0.5rem 0 0.5rem 2.5rem;
+  margin: 0.5rem 0 0.5rem 2.5rem;
 }
 
 footer {
   border: 2px solid;
   padding: 0.5rem;
   margin: 0.5rem;
+  height: 2.6rem;
 }
 
 @media (min-width: 601px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    nav > h1 {
-        padding-bottom: 0;
-    }
-    
-    nav ul {
-        gap: 5rem;
-        font-size: large;
-    }
+  nav > h1 {
+    padding-bottom: 0;
+  }
 
-    .contact > p,
-    #form,
-    .book-list,
-    .no-book {
-        margin-top: 3rem;
-    }
+  nav ul {
+    gap: 5rem;
+    font-size: large;
+  }
 
-    section {
-        max-width: 40rem;
-    }
+  .contact > p,
+  #form,
+  .book-list,
+  .no-book {
+    margin-top: 3rem;
+  }
 
-    .form-sec {
-        width: 20rem;
-    }
+  section {
+    max-width: 40rem;
+  }
 
-    .contact {
-        width: fit-content;
-    }
+  .form-sec {
+    width: 20rem;
+  }
+
+  .contact {
+    width: fit-content;
+  }
 }
