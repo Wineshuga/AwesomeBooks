@@ -29,7 +29,7 @@ class BookList {
     const bookDiv = document.querySelector('.book-list');
     bookDiv.innerHTML = '';
     if (this.bookArray.length === 0) {
-      bookDiv.innerHTML += '<p>You have no awesome books</p>';
+      bookDiv.insertAdjacentHTML('beforebegin', '<p>You have no awesome books</p>');
     }
     this.bookArray.forEach((element, index) => {
       bookDiv.innerHTML += `
