@@ -99,6 +99,10 @@ const showElement = (element) => {
   userBooks.style.display = (element === userBooks) ? 'block' : 'none';
   formPage.style.display = (element === formPage) ? 'block' : 'none';
   contactPage.style.display = (element === contactPage) ? 'block' : 'none';
+
+  listBtn.style.color = (element === userBooks) ? 'blue' : 'black';
+  addNewBtn.style.color = (element === formPage) ? 'blue' : 'black';
+  contactBtn.style.color = (element === contactPage) ? 'blue' : 'black';
 };
 
 listBtn.addEventListener('click', () => showElement(userBooks));
