@@ -155,4 +155,12 @@ footer {
     section {
         max-width: 40rem;
     }
+
+    .form-sec {
+        width: 20rem;
+    }
+
+    .contact {
+        width: fit-content;
+    }
 }
