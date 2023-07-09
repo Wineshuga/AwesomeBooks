@@ -63,3 +63,19 @@ function displayDate() {
   dateHtml.innerHTML = `${month} ${day}, ${year} ${time}`;
 }
 setInterval(displayDate, 1000);
+
+// Add book implementation
+const form = document.querySelector('#form');
+form.addEventListener('submit', (event) => {
+  const inputTitle = document.querySelector('.title');
+  const inputAuthor = document.querySelector('.author');
+  event.preventDefault();
+  if (inputTitle.value && inputAuthor.value) {
+    bookList.addBook(inputTitle.value, inputAuthor.value);
+    inputTitle.value = '';
+    inputAuthor.value = '';
+  } else {
+    inputTitle.value = '';
+    inputAuthor.value = '';
+  }
+});
