@@ -58,6 +58,10 @@ section {
   margin: 1rem auto;
 }
 
+.book-list {
+    margin-top: 0.5rem;
+}
+
 .book-div {
   display: flex;
   justify-content: space-between;
