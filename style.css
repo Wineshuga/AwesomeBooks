@@ -56,6 +56,10 @@ nav > h1 {
   padding-bottom: 0.5rem;
 }
 
+.list-btn {
+  color: blue;
+}
+
 .date {
   text-align: right;
 }
@@ -145,7 +149,7 @@ footer {
 
   .list-btn,
   .add-new-btn {
-    border-right: 2px solid;
+    border-right: 2px solid black;
     padding-right: 2rem;
   }
 
