@@ -139,8 +139,14 @@ footer {
   }
 
   nav ul {
-    gap: 5rem;
+    gap: 2rem;
     font-size: large;
+  }
+
+  .list-btn,
+  .add-new-btn {
+    border-right: 2px solid;
+    padding-right: 2rem;
   }
 
   .contact > p,
