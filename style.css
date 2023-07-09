@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,12 +8,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+p,
+li {
+  font-family: 'Crimson Text', serif;
+}
+
 body {
   padding: 0 0.5rem;
 }
 
 .form-sec,
-.contact {
+.contact,
+.hide-p {
   display: none;
 }
 
@@ -34,4 +40,43 @@ nav {
 
 nav > h1 {
   padding-bottom: 0.5rem;
+}
+
+.date {
+  text-align: right;
+}
+
+section {
+  max-width: 20rem;
+  width: 18rem;
+  margin: auto;
+}
+
+.book-list-sec {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.book-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.book-div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.no-book {
+  margin-top: 1rem;
+}
+
+footer {
+  border: 2px solid;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
