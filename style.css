@@ -52,14 +52,16 @@ section {
   margin: auto;
 }
 
-.book-list-sec {
+.book-list-sec,
+.form-sec {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .book-div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
 }
 
@@ -69,6 +71,22 @@ section {
 
 .no-book {
   margin-top: 1rem;
+}
+
+input[type=text] {
+    display: block;
+    margin: 1rem 0rem 1.5rem;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.add-btn {
+    float: right;
+}
+.add-btn,
+button {
+    font-weight: 700;
+    padding: 0.3rem;
 }
 
 footer {
