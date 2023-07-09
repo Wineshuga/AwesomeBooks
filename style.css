@@ -41,6 +41,7 @@ nav > ul {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+  margin: 0 1rem;
 }
 
 nav li {
@@ -129,5 +130,29 @@ footer {
 }
 
 @media (min-width: 601px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav > h1 {
+        padding-bottom: 0;
+    }
     
+    nav ul {
+        gap: 5rem;
+        font-size: large;
+    }
+
+    .contact > p,
+    #form,
+    .book-list,
+    .no-book {
+        margin-top: 3rem;
+    }
+
+    section {
+        max-width: 40rem;
+    }
 }
