@@ -51,3 +51,15 @@ class BookList {
 }
 
 const bookList = new BookList();
+
+// Display date and time
+function displayDate() {
+  const dateHtml = document.querySelector('.date');
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const year = currentDate.getFullYear();
+  const month = currentDate.toLocaleString('default', { month: 'long' });
+  const time = currentDate.toLocaleTimeString('default', { timeStyle: 'medium' });
+  dateHtml.innerHTML = `${month} ${day}, ${year} ${time}`;
+}
+setInterval(displayDate, 1000);
